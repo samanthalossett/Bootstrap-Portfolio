@@ -50,7 +50,7 @@ body {
     font-size: 22px;
   }
   
-  /* header */
+  /* NAVBAR-responsive now */
   
   #masthead {
     position: fixed;
@@ -59,7 +59,7 @@ body {
     margin: 0 0 30px;
     overflow: auto;
     color: #ffffff;
-    background: #ffffff;
+    background: #4aaaa5;
     border-bottom: 2px solid #cccccc;
   }
   
@@ -78,7 +78,6 @@ body {
   }
   
   nav {
-    float: right;
     margin-top: 25px;
   }
   
@@ -100,14 +99,17 @@ body {
   
   footer {
     padding: 30px 0;
-    clear: both;
     font-size: 12px;
     color: #ffffff;
     color: #cccccc;
     text-align: center;
     background: #666666;
-    border-top: 8px solid #4aaaa5;
     height: 50px;
+  }
+
+  /* This is horrible but it's the only way around BOOTSTRAP :shakesfist: */
+  footer.border-top {
+    border-top-width: 8px !important;
   }
   
   h3, h2 {
@@ -167,10 +169,11 @@ body {
     background: #4aaaa5;
     border-bottom: 0;
   }
-  
-  .auth-image {
+  /*THIS IS ME TRYING TO MAKE THE IMAGE RESPONSIVE */
+  .img-responsive {
     float: left;
-    width: 200px;
+    width: 100%; 
+    max-width: 200px;
     height: auto;
     margin-top: 10px;
     margin-right: 25px;
