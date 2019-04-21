@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("../images/concrete_seamless.png");
+    background: url("assets/Unit_1_Intro_to_Web_Development_HTML_CSS_Git_Homework_portfolio-homework-solution_assets_images_concrete_seamless\ \(1\).png");
   }
   
   * {
@@ -218,4 +218,18 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
+  body {
+    background-color: lightblue;
+  }
   
+  @media screen and (min-width: 400px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+    body {
+      background-color: lavender;
+    }
+  }
